@@ -1,58 +1,62 @@
 <template>
-  <div class="fadediv absolute w-screen h-screen bg-[#f59794] bg-opacity-40 z-10"></div>
-  <div class="element flex flex-col justify-center items-center gap-2 opacity-0 scale-90">
+  <div
+    class="fadediv absolute w-screen h-screen bg-[#f59794] bg-opacity-40 z-10"
+  ></div>
+  <div
+    class="element flex flex-col justify-center items-center gap-2 opacity-0 scale-90"
+  >
     <!-- IMG -->
     <div
-      class="flex justify-center items-center gap-2 border-b-2 border-[#FF0000] border-opacity-10"
+      class="flex flex-col sm:flex-row justify-center items-center gap-5 border-b-2 border-[#FF0000] border-opacity-10"
     >
-      <NuxtImg
-        src="/avatar.png"
-        width="130px"
-        class="place-self-center hover:-rotate-6 hover:scale-105 transition duration-200"
-      />
-
-      <!-- NAME -->
-      <div class="flex items-center gap-10">
-        <div class="flex flex-col text-2xl">
-          <div class="relative">
-            <div class="space-x-1 fadetext">
-              <span>sonya</span>
-              <span class="text-[#D79FAE]">♡‧₊˚</span>
+      <div class="flex gap-3">
+        <NuxtImg
+          src="/avatar.png"
+          width="130px"
+          class="place-self-center hover:-rotate-6 hover:scale-105 transition duration-200"
+        />
+        <!-- NAME -->
+        <div class="flex items-center gap-10">
+          <div class="flex flex-col text-2xl">
+            <div class="relative">
+              <div class="space-x-1 fadetext">
+                <span>sonya</span>
+                <span class="text-[#D79FAE]">♡‧₊˚</span>
+              </div>
+              <span class="text-gradient text-xl absolute top-6">(@wwsou)</span>
             </div>
-            <span class="text-gradient text-xl absolute top-6">(@wwsou)</span>
-          </div>
-
-          <div class="flex flex-col text-lg text-[#857377] mt-6">
-            <span>๑ creating keycaps</span>
-            <span>๑ streaming sometimes</span>
-            <span class="text-[#857377] hover:text-[#D79FAE]">
-              ๑
-              <a
-                href="https://hipolink.me/wwsou"
-                target="_blank"
-                class="underline cursor-pointer transition"
-              >
-                hipolink
-              </a>
-            </span>
-            <div class="flex gap-1 text-xl text-[#D79FAE] ml-1 mt-2">
-              <a href="https://www.instagram.com/wwsou/">
-                <Icon name="fe:instagram" class="links" />
-              </a>
-              <a href="https://vk.com/wwsou">
-                <Icon name="tabler:brand-vk" class="links" />
-              </a>
-              <a href="https://t.me/wwsou">
-                <Icon name="mingcute:telegram-fill" class="links" />
-              </a>
-              <a href="https://www.twitch.tv/netnesonya">
-                <Icon name="ph:twitch-logo-bold" class="links" />
-              </a>
+            <div class="flex flex-col text-lg text-[#857377] mt-6">
+              <span>๑ creating keycaps</span>
+              <span>๑ streaming sometimes</span>
+              <span class="text-[#857377] hover:text-[#D79FAE]">
+                ๑
+                <a
+                  href="https://hipolink.me/wwsou"
+                  target="_blank"
+                  class="underline cursor-pointer transition"
+                >
+                  hipolink
+                </a>
+              </span>
+              <div class="flex gap-1 text-xl text-[#D79FAE] ml-1 mt-2">
+                <a href="https://www.instagram.com/wwsou/" target="_blank">
+                  <Icon name="fe:instagram" class="links" />
+                </a>
+                <a href="https://vk.com/wwsou" target="_blank">
+                  <Icon name="tabler:brand-vk" class="links" />
+                </a>
+                <a href="https://t.me/wwsou" target="_blank">
+                  <Icon name="mingcute:telegram-fill" class="links" />
+                </a>
+                <a href="https://www.twitch.tv/netnesonya" target="_blank">
+                  <Icon name="ph:twitch-logo-bold" class="links" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <ImageWidget class="bottom-4" />
       </div>
+      <ImageWidget class="bottom-4 left-2" />
     </div>
 
     <!-- Accordion -->
